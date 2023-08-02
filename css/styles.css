@@ -1,1 +1,66 @@
+body {
+    background-color: rgb(252, 252, 255);
+   font-family: "Lora" sans-serif;
+  }
 
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Oxygen" serif;
+  }
+  
+  body a {
+    color: rgb(58, 180, 180);
+  }
+  body a:hover{
+   color: rgba(28, 175, 48, 0.925);
+  }
+  
+  body a:visited{
+    color:blue;
+  }
+  
+  
+  
+  
+  html {
+    scroll-behavior: smooth;
+    position: relative;
+    min-height: 100%;
+  }
+  
+
+  /*
+    ======================================
+     HEADER STYLES
+    =====================================
+    */
+
+ .navbar {
+  background-color: #8a2be3;
+  border-bottom: 10px solid white;
+  border-bottom-color: white;
+  height: 150px;
+ }   
+
+.navbar-nav {
+  font-size: 25px;
+  margin-left: 9em;
+  margin-top: 2em;
+  padding: 20px;
+  word-spacing: 2px;
+  font-stretch:semi-expanded;
+  
+}
+
+
+/*
+==========================================
+            SLIDER STYLES
+==========================================
+*/
+
+#slider-img {
+  height: 700px;
+  width: auto;
+
+}
+      
