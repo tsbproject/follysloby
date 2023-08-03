@@ -11,11 +11,11 @@ body {
     color: rgb(58, 180, 180);
   }
   body a:hover{
-   color: rgba(28, 175, 48, 0.925);
+   color: rgba(157, 19, 37, 0.925);
   }
   
   body a:visited{
-    color:blue;
+    color:rgb(160, 44, 61);
   }
   
   
@@ -36,19 +36,42 @@ body {
 
  .navbar {
   background-color: #8a2be3;
-  border-bottom: 10px solid white;
+  border-bottom: 5px solid white;
   border-bottom-color: white;
   height: 150px;
  }   
 
+ .header-info {
+  background-color: #8a2be3;
+
+ }
+
+ #Telephone {
+  color: white;
+
+ }
+
+ #envelope {
+  font-size: 15px;
+  color: white;
+ }
+
+ #social {
+  color: white;
+ }
+
+ #header {
+  font-size: medium;
+  color: white;
+ }
+
 .navbar-nav {
-  font-size: 25px;
-  margin-left: 9em;
+  font-size: 20px;
+  margin-left: 7em;
   margin-top: 2em;
-  padding: 20px;
-  word-spacing: 2px;
+  padding: 2px;
   font-stretch:semi-expanded;
-  
+  text-indent: 7px;
 }
 
 
@@ -63,4 +86,37 @@ body {
   width: auto;
 
 }
+
+.slide-header {
+  font-weight: bolder;
+  font-size: 80px;
+ 
+  
+}
+
+.slide-text {
+  font-size: 40px;
+  margin-bottom: 5em;
+}
+
+
+/*
+===================================================
+   INFO TILES STYLES
+===================================================
+*/
+
+.info-tiles {
+  justify-content: center;
+  position: relative;
+  bottom: 3em;
+  z-index: 10;
+  
+}
+
+#card-img {
+  height: 300px;
+}
+
+
       
