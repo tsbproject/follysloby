@@ -173,6 +173,11 @@ body {
   padding: 25px;
 }
 
+.footer-logo{
+  height: inherit;
+  width: 100px;
+}
+
 .copyright-bar {
   background-color: #2b1515;
   color: white;
