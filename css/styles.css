@@ -230,6 +230,32 @@ SMALL DEVICES
 
   }
 
+
+  .intro {
+    height: 620px;
+    margin-top: 20px;
+    
+  
+  }
+
+  .front-info-image {
+    height: 400px;
+    width: 400px;
+    border: 3px solid #8a2be3;
+    border-radius: 15px;
+  
+  }
+
+  .footer {
+    color: white;
+    height: 800px;
+    background-color: #2c2929;
+    margin-top: 11em;
+    column-gap: 8em;
+    padding: 25px;
+  }
+  
+
   .dropdown-menu {
     background-color: #c62351;
     color: white;
