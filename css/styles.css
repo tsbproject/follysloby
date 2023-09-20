@@ -292,6 +292,48 @@ SMALL DEVICES
     
   
   }
+
+  .footer {
+    color: white;
+    height: 850px;
+    background-color: #2c2929;
+    margin-top: 11em;
+    column-gap: 8em;
+    padding: 25px;
+  }
+  
+
+
+  .copyright-bar {
+    font-size: 12px;
+    background-color: #2b1515;
+    color: white;
+    text-align: center;
+    height: 30px;
+  
+  }
+
+}
+
+
+  /********** Super Super extra small devices Only :-) (e.g., iPhone x) **********/
+@media (max-width: 340px) {
+
+  .front-info-image {
+    height: 320px;
+    width: 300px;
+    border: 3px solid #8a2be3;
+    border-radius: 15px;
+    margin-left: -5px;
+    box-shadow: 0px 0px 9px 0;
+    
+  
+  }
+
+  
+
+  
+
  
 }
 
