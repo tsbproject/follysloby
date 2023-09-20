@@ -155,9 +155,9 @@ body {
 .front-info-image {
   height: 500px;
   width: 500px;
-  border: 3px solid #8a2be3;
+  border: 3px solid #1f1924;
   border-radius: 15px;
-  box-shadow: 5px  5px;
+  box-shadow: 0px  0px 12px 0px;
 
 }
 
@@ -260,7 +260,7 @@ SMALL DEVICES
     width: 360px;
     border: 3px solid #8a2be3;
     border-radius: 15px;
-    box-shadow: 5px 5px;
+    box-shadow: 0px 0px 9px 0px;
     
   
   }
