@@ -179,12 +179,17 @@ body {
   padding: 25px;
 }
 
+.footer-link {
+  margin-left: 5em;
+}
+
 .footer-logo{
   height: inherit;
   width: 100px;
 }
 
 .copyright-bar {
+  font-size: small;
   background-color: #2b1515;
   color: white;
   text-align: center;
@@ -338,7 +343,6 @@ SMALL DEVICES
 
 
   .footer {
-    font-size: 10px;
     color: white;
     height: 1000px;
     background-color: #2c2929;
@@ -347,10 +351,7 @@ SMALL DEVICES
     padding: 25px;
   }
 
-   .footer-link {
-    font-size: 20px;
-
-  }
+  
   
 
 
