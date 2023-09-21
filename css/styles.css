@@ -22,11 +22,11 @@ body {
     color: rgb(58, 180, 180);
   }
   body a:hover{
-   color: rgba(157, 19, 37, 0.925);
+   color: db1995;
   }
   
   body a:visited{
-    color:rgb(160, 44, 61);
+    color:db1995;
   }
   
   
@@ -46,14 +46,12 @@ body {
     */
 
  .navbar {
-  background-color: #120991;
-  border-bottom: 5px solid white;
-  border-bottom-color: white;
+  background-color: transparent;
   height: 150px;
  }   
 
  .header-info {
-  background-color: #8a2be3;
+  background-color: #db1995;
 
  }
 
