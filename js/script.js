@@ -6,15 +6,15 @@ var previousScroll = 0;
 
                 if (currentScroll > previousScroll) {
                     // Scrolling down
-                    $('.navbar').css('height', '60px');
+                    $('.navbar').css('height', '80px');
                     $('.navbar').css('padding', '10px 0');
-                    $('.nav-link').css('padding', '5px 0');
-                    $('.logo').css('padding', '10px 0');
+                    $('.navbar-nav').css('padding', '5px 0');
+                    $('.logo').css('padding', '400px 0');
                 } else {
                     // Scrolling up
-                    $('.navbar').css('height', '80px');
-                    $('.navbar').css('padding', '20px 0');
-                    $('.nav-link').css('padding', '100px 0');
+                    $('.navbar').css('height', '150px');
+                    $('.navbar').css('padding', '0px 0');
+                    $('.navbar-').css('padding', '0px 0');
                     $('.logo').css('padding', '100px 0');
                 }
 
@@ -35,7 +35,7 @@ var previousScroll = 0;
 
 
 
-$(document).ready(function () {
+/*$(document).ready(function () {
     $(window).scroll(function () {
         if ($(this).scrollTop() > 100) {
             $('.navbar').css('height', '60px');
@@ -52,3 +52,4 @@ $(document).ready(function () {
         }  
     }); 
 });
+*/

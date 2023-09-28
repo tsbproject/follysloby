@@ -45,17 +45,37 @@ body {
     =====================================
     */
 
- .navbar {
-  background-color: transparent;
-  height: 150px;
-  transition: height 0.3s ease-in-out, padding 0.3s ease-in-out;
- }   
+    .logo {
+      padding: 100px 0;
+      transition: padding 2s ease-in-out;
+      z-index: 10;
+      position: relative;
+      
+  }
 
- .logo {
-  padding: 100px 0;
-  transition: padding 0.3s ease-in-out;
+ .navbar {
+  position: relative;
+  filter: alpha(opacity=60);
+  opacity: 0.75;
+  height: 150px;
+  display: flex;
+  background-size: cover;
+  border-bottom: 1px solid #db1995 ;
+ transition: height 0.3s ease-in-out, padding 0.3s ease-in-out;
+ }  
+ 
+ .navbar::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background: rgb(138, 43, 227);
 
  }
+
+ 
 
  .header-info {
   background-color: #db1995;
@@ -90,13 +110,15 @@ body {
   padding: 2px;
   font-stretch:semi-expanded;
   text-indent: 7px;
+  position: absolute;
+  transition: padding 0.3s ease-in-out;
 }
 
 
 .nav-link {
   color: white;
-  padding: 100px 0;
-  transition: padding 0.3s ease-in-out;
+
+  
 }
 
 
