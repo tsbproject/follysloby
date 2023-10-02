@@ -1,55 +1,50 @@
-var previousScroll = 0;
+//shrinking navbar. logo and Navlinks while scrolling up
+$(document).ready(function () {
+    var previousScroll = 0;
+    var $navbar = $('.navbar');
+    var $logo = $('.logo');
+    var $navbarNav = $('.navbar-nav');
 
-        $(document).ready(function () {
-            $(window).scroll(function () {
-                var currentScroll = $(this).scrollTop();
-
-                if (currentScroll > previousScroll) {
-                    // Scrolling down
-                    $('.navbar').css('height', '80px');
-                    $('.navbar').css('padding', '10px 0');
-                    $('.navbar-nav').css('padding', '5px 0');
-                    $('.logo').css('padding', '400px 0');
-                } else {
-                    // Scrolling up
-                    $('.navbar').css('height', '150px');
-                    $('.navbar').css('padding', '0px 0');
-                    $('.navbar-').css('padding', '0px 0');
-                    $('.logo').css('padding', '100px 0');
-                }
-
-                previousScroll = currentScroll;
-            });
-        });
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*$(document).ready(function () {
     $(window).scroll(function () {
-        if ($(this).scrollTop() > 100) {
-            $('.navbar').css('height', '60px');
-            $('.navbar').css('padding', '10px 0');
-            $('.nav-link').css('padding', '5px 0');
-            $('.logo').css('padding', '10px 0');
-        } else {
-            $('.navbar').css('height', '80px');
-            $('.navbar').css('padding', '20px 0');
-            $('.nav-link').css('padding', '100px 0');
-            $('.logo').css('padding', '100px 0');
+        var currentScroll = $(this).scrollTop();
 
-            
-        }  
-    }); 
+        if (currentScroll > previousScroll) {
+            // Scrolling down
+            $navbar.css('height', '60px');
+            $navbar.css('padding', '10px 0');
+            $logo.css('max-height', '40px');
+            $navbarNav.addClass('shrink');
+        } else {
+            // Scrolling up
+            $navbar.css('height', '110px');
+            $navbar.css('padding', '20px 0');
+            $logo.css('max-height', '100px');
+            $navbarNav.removeClass('shrink');
+        }
+
+        previousScroll = currentScroll;
+    });
 });
-*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

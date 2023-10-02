@@ -46,34 +46,38 @@ body {
     */
 
     .logo {
-      padding: 100px 0;
-      transition: padding 2s ease-in-out;
-      z-index: 10;
-      position: relative;
+     width: auto;
+     height: auto;
+     position: relative;
+     max-height: 100px; /* Adjust the logo height when the navbar shrinks */
+     transition: max-height 0.3s ease-in-out;
+     
       
   }
 
  .navbar {
-  position: relative;
   filter: alpha(opacity=60);
-  opacity: 0.75;
-  height: 150px;
+  opacity: 0.7; 
+  height: 110px;
   display: flex;
   background-size: cover;
   border-bottom: 1px solid #db1995 ;
- transition: height 0.3s ease-in-out, padding 0.3s ease-in-out;
- }  
+  transition: height 0.3s ease-in-out, padding 0.3s ease-in-out;
+ 
+}  
  
  .navbar::before {
     content: "";
     position: absolute;
     top: 0px;
     right: 0px;
-    bottom: 0px;
+    bottom: 0px; 
     left: 0px;
     background: rgb(138, 43, 227);
 
  }
+
+
 
  
 
@@ -111,12 +115,19 @@ body {
   font-stretch:semi-expanded;
   text-indent: 7px;
   position: absolute;
-  transition: padding 0.3s ease-in-out;
+  transition: font-size 0.3s ease-in-out;
+}
+
+.navbar-nav.shrink {
+  font-size: 80%; /* Adjust the font size when the navbar shrinks */
 }
 
 
 .nav-link {
   color: white;
+  transition: height 0.3s ease-in-out, padding 0.3s ease-in-out;
+  font-size: 80%; /* Adjust the font size when the navbar shrinks */
+  
 
   
 }
@@ -259,6 +270,16 @@ SMALL DEVICES
 
 /********** Small devices only **********/
 @media (min-width: 768px) and (max-width: 991px) {
+
+  .navbar {
+    height: 80px !important;
+    padding: 20px 0 !important;
+}
+
+.logo {
+    max-height: 50px !important;
+}
+
   
   
  
@@ -279,9 +300,46 @@ SMALL DEVICES
   }
 
   .logo {
-    height: 120px;
-    width: 120px;
-  }
+    width: 100px;
+    height: 80px;
+    z-index: 10; 
+    position: relative; 
+    top: -5px;
+   
+ }
+  .navbar-nav {
+    font-size: 20px;
+    margin-left: 7em;
+    margin-top: 2em;
+    padding: 2px;
+    font-stretch:semi-expanded;
+    text-indent: 7px;
+  
+
+  } 
+  
+
+   .navbar {
+    position: relative; 
+    filter: alpha(opacity=60); 
+    opacity: 0.75; 
+    height: 150px;
+    display: flex; 
+    border-bottom: 1px solid #db1995 ;
+ 
+   }  
+   
+   .navbar::before {
+      content: "";
+        position: absolute;
+       top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;  
+      background: rgb(138, 43, 227);
+  
+   }
+   
 
 
   .intro {
@@ -329,12 +387,22 @@ SMALL DEVICES
 /********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
 @media (max-width: 414px) {
 
+ .navbar-toggler-icon {
+
+  color: white ;
+
+  }
+
 
   
   .logo {
-    height: 120px;
-    width: 120px;
-  }
+    width: 90px;
+    height: 70px;
+    z-index: 10; 
+    position: relative; 
+    top: -5px;
+   
+}
 
   .front-info-image {
     height: 400px;
