@@ -1,3 +1,51 @@
+// DROPDOWN MENU ANMATION
+
+// Get all the dropdown menus on the page
+const dropdowns = document.querySelectorAll(".dropdown");
+
+// Loop through each dropdown menu
+dropdowns.forEach((dropdown) => {
+  // Get the dropdown menu and the dropdown toggle button
+  const menu = dropdown.querySelector(".dropdown");
+  const toggle = dropdown.querySelector(".dropdown-toggle");
+
+  // Add an event listener to the toggle button to trigger the animation
+  toggle.addEventListener("click", () => {
+    menu.classList.add("show", "animated");
+  });
+
+  // Add an event listener to the dropdown menu to remove the animation classes when it is hidden
+  menu.addEventListener("animation", () => {
+    menu.classList.remove("show", "animated");
+  });
+});
+
+
+
+
+// Get all the dropdown menus on the page
+const $navbarNav = document.querySelectorAll(".navbar-toggler");
+
+// Loop through each dropdown menu
+dropdowns.forEach((navbar) => {
+  // Get the dropdown menu and the dropdown toggle button
+  const menu = navbar.querySelector(".navbar");
+  const toggle = navbar.querySelector(".navbar-toggler");
+
+  // Add an event listener to the toggle button to trigger the animation
+  toggle.addEventListener("click", () => {
+    menu.classList.add("show", "animated");
+  });
+
+  // Add an event listener to the dropdown menu to remove the animation classes when it is hidden
+  menu.addEventListener("animation", () => {
+    menu.classList.remove("show", "animated");
+  });
+});
+
+
+
+
 //shrinking navbar. logo and Navlinks while scrolling up
 $(document).ready(function () {
     var previousScroll = 0;
@@ -25,6 +73,12 @@ $(document).ready(function () {
         previousScroll = currentScroll;
     });
 });
+
+
+
+
+
+
 
 
 

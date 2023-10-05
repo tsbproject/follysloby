@@ -19,7 +19,7 @@ body {
   }
   
   body a {
-    color: rgb(58, 180, 180);
+    color: rgb(132, 136, 136);
   }
   body a:hover{
    color: db1995;
@@ -109,28 +109,71 @@ body {
 
 .navbar-nav {
   font-size: 20px;
-  margin-left: 7em;
+  color: white;
+  margin-left: 12em;
   margin-top: 2em;
   padding: 2px;
   font-stretch:semi-expanded;
   text-indent: 7px;
-  position: absolute;
-  transition: font-size 0.3s ease-in-out;
+  position: fixed;
+  /* transition: font-size 0.3s ease-in-out; */
 }
+
+.navbar-toggler {
+  z-index: 10;
+  
+}
+
+/* .navbar-toggler-icon {
+ 
+} */
+
+
+
+
 
 .navbar-nav.shrink {
   font-size: 80%; /* Adjust the font size when the navbar shrinks */
 }
 
 
-.nav-link {
-  color: white;
+.nav-links {
+  color: white; 
+  font-size: 20px;
   transition: height 0.3s ease-in-out, padding 0.3s ease-in-out;
   font-size: 80%; /* Adjust the font size when the navbar shrinks */
   
 
   
 }
+
+.dropdown-item {
+  background-color: white;
+  text-align: center;
+
+}
+
+
+/*
+  ===========================
+   DROPDOWN MENU  STYLE
+  ============================
+  */
+  .dropdown-menu {
+    animation: slideDown 0.5s ease forwards;
+    transform-origin: top;
+  }
+  
+  @keyframes slideDown {
+    from {
+      transform: scaleY(0);
+      opacity: 0;
+    }
+    to {
+      transform: scaleY(1);
+      opacity: 1;
+    }
+  }
 
 
 
@@ -277,7 +320,7 @@ SMALL DEVICES
 }
 
 .logo {
-    max-height: 50px !important;
+    max-height: 40px !important;
 }
 
   
@@ -287,13 +330,90 @@ SMALL DEVICES
 
 /********** Extra small devices only **********/
 @media (max-width: 767px) {
+  /* CSS for the collapsed .navbar-toggler */
+.navbar-collapse.collapse {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+
+
+
+/* Navbar-toggler animation when clicked*/
+.navbar-collapse.collapse {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+
+.navbar-toggler.collapsed + .navbar-collapse.collapse {
+  max-height: 1000px; /* Adjust the max-height to the desired value */
+  transition: max-height 0.3s ease-in;
+}
+
+/* CSS for the .navbar-toggler button */
+.navbar-toggler {
+  transition: transform 0.3s ease-in-out;
+  transform-origin: center;
+}
+
+.navbar-toggler.collapsed {
+  transform: rotate(0deg); /* Initial state */
+}
+
+.navbar-toggler:not(.collapsed) {
+  transform: rotate(90deg); /* Rotate to open state */
+}
+
+
+
+/* MAKING MOBILE MENU LINKS SLIDE  */
+
+ * CSS for the collapsed .navbar-collapse 
+.navbar-collapse.collapse {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+} 
+
+  .navbar-toggler.collapsed + .navbar-collapse.collapse {
+    max-height: 1000px; /* Adjust the max-height to the desired value */
+    transition: max-height 0.3s ease-in;
+}  
+
+/* CSS for the links inside the .navbar-collapse */
+.navbar-collapse.collapse .navbar-nav {
+    padding-left: 0;
+    margin-left: 50%; /* Start with links outside the viewport */
+    transition: margin-left 1s ease-in-out;
+}
+
+.navbar-toggler.collapsed + .navbar-collapse.collapse .navbar-nav {
+    margin-left: 0; /* Slide links in from left to right */
+    transition: margin-left 0.5s ease-in-out;
+}
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   .nav-item {
-    background-color:#8a2be3;
     text-align: center;
-    text-decoration-line: underline;
-    position: relative;
-    bottom: 1.5em;
-    right: 3em;
+    background-color:#db1995;
+    width: 50em;
+    background-size: cover;
+    text-align: center;
+     position: relative;
+     bottom: 2em; 
+     right: 23em; 
+     transition: ease-in-out 0.5s;
 
 
 
@@ -314,6 +434,7 @@ SMALL DEVICES
     padding: 2px;
     font-stretch:semi-expanded;
     text-indent: 7px;
+    z-index: 10;
   
 
   } 
@@ -368,11 +489,11 @@ SMALL DEVICES
     padding: 25px;
   }
   
-
+/* 
   .dropdown-menu {
     background-color: #c62351;
     color: white;
-  }
+  } */
 
 
   .nav-link {
@@ -387,17 +508,17 @@ SMALL DEVICES
 /********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
 @media (max-width: 414px) {
 
- .navbar-toggler-icon {
+ /* .navbar-toggler-icon {
 
   color: white ;
 
-  }
+  } */
 
 
   
   .logo {
-    width: 90px;
-    height: 70px;
+    width: 100px;
+    /* height: 100px; */
     z-index: 10; 
     position: relative; 
     top: -5px;
