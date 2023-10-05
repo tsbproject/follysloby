@@ -545,11 +545,11 @@ SMALL DEVICES
 }
 
   .front-info-image {
-    height: 400px;
+    height: 350px;
     width: 350px;
     border: 3px solid #8a2be3;
     border-radius: 15px;
-    margin-left: 0.9em;
+    margin-left: 0.6em;
     box-shadow: 0px 0px 9px 0;
     
   
