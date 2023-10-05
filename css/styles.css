@@ -148,7 +148,11 @@ body {
 }
 
 .dropdown-item {
-  background-color: white;
+  color: #f8f8f8;
+  background-color: #db1995;
+  opacity: none;
+  background-size: contain;
+  width: 500px;
   text-align: center;
 
 }
@@ -513,6 +517,18 @@ SMALL DEVICES
   color: white ;
 
   } */
+
+
+  .dropdown-item {
+    color: #f8f8f8;
+    background-color: #db1995;
+    opacity: none;
+    background-size: contain;
+    width: 500px;
+    text-align: center;
+    margin-left: 100px ;
+  
+  }
 
 
   
