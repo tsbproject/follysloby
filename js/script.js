@@ -1,9 +1,3 @@
-
-
-
-
-
-
 //shrinking navbar. logo and Navlinks while scrolling up
 $(document).ready(function () {
   var previousScroll = 0;
